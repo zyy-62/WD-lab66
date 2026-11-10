@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET MVC Website</h1>
+    <p class="lead">This is my basic MVC lab project.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>JavaScript Test</h2>
+        <p>Click the button below to trigger the JavaScript alert:</p>
+        <form>
+            <input type="button" value="Click Me" onclick="msg()" class="btn btn-primary" />
+        </form>
+    </div>
+
+    <div class="col-md-4">
+        <h2>My Image</h2>
+        <p>Here is the image from the Content/Images folder:</p>
+        <img src="/Content/Images/image1.jpg" alt="Sample" style="max-width: 100%;" />
+    </div>
+
+    <div class="col-md-4">
+        <h2>My Video</h2>
+        <p>Here is the video from the Content/Video folder:</p>
+        <video width="100%" height="auto" controls="controls" autoplay="autoplay">
+            <source src="/Content/Video/Demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+            <source src="~/Content/Video/Demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
